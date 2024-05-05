@@ -2,7 +2,14 @@ name: hello-world
 on: push
 jobs:
     build:
-        runs-on: ubuntu-latest
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                os: [ubuntu-latest, windows-latest, macos-latest]
         steps:
             - uses: actions/checkout@v3
             - run: make say-hello
+            - name: Run Snyk to check for vulnerabilities
+              uses: snyk/actions/node@master
+              env:
+                SNYK_TOKEN: e62af7a7-0f85-4fb9-ad16-f0841e50430b
