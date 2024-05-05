@@ -1,2 +1,2 @@
 # hexlet-my-first-workflow
-[![Actions Status](https://github.com/ksssksss/hexlet-my-first-workflow/blob/main/.github/workflows/hello-world.yml/badge.svg)](https://github.com/ksssksss/hexlet-my-first-workflow/actions)
+[![Actions Status](https://github.com/ksssksss/hexlet-my-first-workflow/blob/main/actions/workflows/hello-world.yml/badge.svg)](https://github.com/ksssksss/hexlet-my-first-workflow/actions)
